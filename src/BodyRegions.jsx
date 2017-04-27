@@ -21,6 +21,7 @@ class BodyRegions extends Component {
   }
 
   render () {
+    if(localStorage.getItem('uid'))
       switch(this.props.location.pathname) {
         case "/region/head":
           return (
