@@ -39,7 +39,6 @@ class Home extends Component {
   }
 
   render () {
-    if (localStorage.getItem('uid')) {
       return (
         <div className="home">
           <Dashboard />
@@ -89,39 +88,7 @@ class Home extends Component {
           </Row>
         </div>
       )
-    } else {
-      return (
-        <div>
-          <br></br><br></br><br></br><br></br><br></br>
-            <Slider>
-              <Slide
-                Col={8} offset="m2"
-                placement="right"
-                src={torsoPain}
-                title="Track Your Pains">
-                Along With Everything Else
-              </Slide>
-              <Slide
-                src={visual2}
-                alignment="left"
-                title="Record Your Pains">
-                In Three Easy Steps
-              </Slide>
-              <Slide
-                src={doctor8}
-                alignment="left"
-                title="Share">
-                <h5>With Doctors</h5>
-              </Slide>
-              <Slide
-                src={better3}
-                title="So You Can Enjoy The Better Things"
-                alignment="center">
-              </Slide>
-            </Slider>
-        </div>
-      )
-    }
+
   }
 }
 

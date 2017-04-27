@@ -43,7 +43,7 @@ class BodyParts extends Component {
   }
 
   render () {
-    if (this.props.isClickable === true && localStorage.getItem('uid')) {
+    if (this.props.isClickable === true) {
       return (
         <div className="part">
           <Link to={"/tracker/" + this.props.part}>
